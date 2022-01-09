@@ -81,9 +81,9 @@ const CommentsForm = ({ slug }) => {
   };
 
   return (
-    <div className="bg-white shadow-lg rounded-lg p-8 pb-12 mb-8">
+    <div className="bg-stone-200 shadow-lg shadow-rose-500/30 rounded-lg p-8 pb-12 mb-8">
       <h3 className="text-xl mb-8 font-semibold border-b pb-4">
-        Leave a Reply
+        Leave a Comment
       </h3>
       <div className="grid grid-cols-1 gap-4 mb-4">
         <textarea
@@ -91,7 +91,7 @@ const CommentsForm = ({ slug }) => {
           onChange={onInputChange}
           className="p-4 outline-none w-full rounded-lg h-40 focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
           name="comment"
-          placeholder="Comment"
+          placeholder="Your comment..."
         />
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
@@ -100,7 +100,7 @@ const CommentsForm = ({ slug }) => {
           value={formData.name}
           onChange={onInputChange}
           className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
-          placeholder="Name"
+          placeholder="Your name..."
           name="name"
         />
         <input
@@ -108,7 +108,7 @@ const CommentsForm = ({ slug }) => {
           value={formData.email}
           onChange={onInputChange}
           className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
-          placeholder="Email"
+          placeholder="Your email..."
           name="email"
         />
       </div>
