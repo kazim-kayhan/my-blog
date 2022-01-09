@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.btn{
+.btn {
   @apply transition ease-in-out delay-150 bg-pink-600 hover:-translate-y-1 hover:scale-105 hover:bg-indigo-500 duration-300 shadow-indigo-600/80 shadow-xl text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer;
 }
 
@@ -23,7 +23,12 @@ body::after {
   content: "";
   width: 100%;
   height: 100vh;
-  background-image: url("../public/bg.jpg");
+  background: linear-gradient(
+    356deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(17, 9, 117, 1) 100%,
+    rgba(30, 14, 30, 1) 100%
+  );
   position: fixed;
   left: 0;
   top: 0;
